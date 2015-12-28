@@ -73,12 +73,18 @@ h1 {
     font-family: 'Raleway', Arial, sans-serif;
 }
 
+.diff{
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
 .title {
     font-family: 'Raleway', Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 80px;
+    margin-top: 60px;
+    font-size: 40px;
     margin-bottom: 0.3em;
 }
 

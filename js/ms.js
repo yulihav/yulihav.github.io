@@ -64,7 +64,7 @@ Board.prototype = {
     
     putMines: function(num_of_mines) {
         while (num_of_mines > 0) {
-            var rand = Math.floor(size_row * size_col * Math.random());
+            var rand = Math.floor(100 * Math.random());
             var row = Math.floor(rand / this.size_col_);
             var col = Math.floor(rand % this.size_col_);
             
