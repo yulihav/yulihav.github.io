@@ -47,7 +47,7 @@ Board.prototype = {
         }
     },
     
-    // 何やってるのかわかりづらい。。。
+  
     setNeighborList: function() {
         for (var i=0; i<this.size_row_; i++) {
             for (var j=0; j<this.size_col_; j++) {
@@ -64,7 +64,7 @@ Board.prototype = {
     
     putMines: function(num_of_mines) {
         while (num_of_mines > 0) {
-            var rand = Math.floor(100 * Math.random());
+            var rand = Math.floor(size_row * size_col * Math.random());
             var row = Math.floor(rand / this.size_col_);
             var col = Math.floor(rand % this.size_col_);
             
@@ -301,10 +301,23 @@ var flip = function(event) {
     }
 };
 
+  function start_timer() {
+    timer = window.setInterval( function() { 
+      $("#timer").html( parseInt( $("#timer").html() )+1 ); 
+      if ( parseInt( $("#timer").html() ) === 999 ) { stop_timer(); };
+    } , 1000);
+  };
+
+  function stop_timer() { 
+    window.clearInterval(timer); 
+  };
+
 var reset = function(event) {
+    stop_timer();   
     event.data.game.init();
     $('.flipped_tile').removeClass('flipped_tile');
     $('.tile').bind('click', {game: event.data.game}, flip);
+    start_timer();
 
     hideMessage();
 };
@@ -313,11 +326,28 @@ var reset = function(event) {
  * initialize
  */
 $(document).ready(function() {
-    var size_row = 10;
-    var size_col = 10;
-    var num_mines = 10;
-    var ms = new MineSweeper($('#field_area'), size_col, size_row, num_mines);
 
+var timer;  
+var size_row;
+var size_col;
+var num_mines;
+ 
+  var difficulty = $("#difficulty").val();
+    if ( difficulty == "beginner" ) {
+      size_row = 10;
+      size_col = 10;
+      num_mines = 10;
+    } else if ( difficulty == "intermediate" ) {
+      size_row = 15;
+      size_col = 15;
+      num_mines = 30;
+    } else if ( difficulty == "expert" ) {
+      size_row = 20;
+      size_col = 20;
+      num_mines = 100;
+    }
+  
+    var ms = new MineSweeper($('#field_area'), size_col, size_row, num_mines);
     ms.init();
 
     $('.tile').bind('click', {game: ms}, flip);
