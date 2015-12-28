@@ -1,0 +1,121 @@
+/* HEADER AND MENU */  
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+  .header {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  position: relative;
+  left: 1.5%;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 7px;
+}
+.nav {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav * {
+  box-sizing: border-box;
+}
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.nav a {
+  padding: 0.5em 0;
+  color: #686868; 
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: lightblue;
+}
+.nav a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: black;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.nav a:hover:before,
+.nav .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.nav a:hover:after,
+.nav .current a:after {
+  max-width: 100%;
+}
+body {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+
+.name {
+  text-transform: uppercase ;
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+/*  SECTIONS  */
+.section {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+  width: 100%;
+}
+.span_3_of_4 {
+  width: 74.6%;
+}
+.span_2_of_4 {
+  width: 49.2%;
+}
+.span_1_of_4 {
+  width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
