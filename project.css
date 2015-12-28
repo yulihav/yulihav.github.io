@@ -1,43 +1,5 @@
-
-  .right_column {
-    float:right;
-    width:160px;
-  }    
-
-  .left_column {
-    margin-right: 170px;
-  }
-  
-  .right_desc {
-    float:  right;
-    margin-top: 50px;
-    margin-right: 700px;
-    width:200px;
-    text-align: left;
-    position: inherit;
-    color: black;
-    font-family: 'Raleway', Arial, sans-serif;
-    font-weight: 500;
-    font-size: 20px ;
-}
-
-.par {
-  width:350px;
-  margin:20px;
-  position: relative;
-  text-align: center;
-    padding-bottom: 25% ;
-    padding-right: 25% ;
-  }
-
-   .name {
-  font-weight: 600;
-  text-align: center;
-}
-
-   
-  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-  
+/* HEADER AND MENU */  
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
   .header {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
@@ -47,7 +9,6 @@
   font-weight: 500;
   letter-spacing: 7px;
 }
-  
 .snip1168 {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
@@ -104,43 +65,57 @@
 .snip1168 .current a:after {
   max-width: 100%;
 }
-/* Demo purposes only */
 body {
   background-color: #FFFFFF;
   padding: 50px 0;
 }
 
-.contact-block ul {
-  text-align: center;
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1.5em;
-  padding: 15;
-}
 
-.par {
-  text-align: right;
-}
-
-.contact-block li {
-  text-align: center;
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0 1.5em;
-  margin-top: 10% ;
-  margin-left: 10%;
-  top: 10px  ;
-  bottom:  10px ;
-  padding: 15px;
-}
-
-.contact-sentence {
+.name {
+  text-transform: uppercase ;
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
-  position: relative;
-  left: 1.5%;
-  text-transform: capitalize;
   font-weight: 500;
-  margin-top: 7%;
-  letter-spacing: 5px;
+}
+
+/*  SECTIONS  */
+.section {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+  width: 100%;
+}
+.span_3_of_4 {
+  width: 74.6%;
+}
+.span_2_of_4 {
+  width: 49.2%;
+}
+.span_1_of_4 {
+  width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 }

@@ -71,30 +71,3 @@ body {
   background-color: #FFFFFF;
   padding: 50px 0;
 }
-.contact-block {
-  text-align:center;
-}
-
-.contact-block li {
-  display: inline-block;
-  margin: 0 1.5em;
-  margin-top: 10% ;
-  margin-left: 10%;
-  top: 10px  ;
-  bottom:  10px ;
-  padding: 15px;
-}
-
-.contact-block a:hover {
-  opacity: 0.5;
-}
-.contact-sentence {
-  font-family: 'Raleway', Arial, sans-serif;
-  text-align: center;
-  position: relative;
-  left: 1.5%;
-  text-transform: capitalize;
-  font-weight: 500;
-  margin-top: 7%;
-  letter-spacing: 5px;
-}
