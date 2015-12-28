@@ -1,13 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+  
   .header {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
-  position: relative;
-  left: 1.5%;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 7px;
 }
-
+  
 .snip1168 {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
@@ -64,6 +63,15 @@
 .snip1168 .current a:after {
   max-width: 100%;
 }
+/* Demo purposes only */
+body {
+  background-color: #FFFFFF;
+  padding: 50px 0;
+}
+
+    
+
+
 
 .scoreboard {
   border-style: groove;
