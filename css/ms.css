@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+  
+  .header {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+  
+.nav {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav * {
+  box-sizing: border-box;
+}
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.nav a {
+  padding: 0.5em 0;
+  color: #686868; 
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.nav a:before,
+.nav a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav a:before {
+  top: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: lightblue;
+}
+.nav a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: black;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.nav a:hover:before,
+.nav .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.nav a:hover:after,
+.nav .current a:after {
+  max-width: 100%;
+}
+
+body {
+    background-image: url('/img/brickwall.png');
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.title {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 80px;
+    margin-bottom: 0.3em;
+}
+
+.title:hover {
+    color: lightgrey;
+}
+
+
+
+.button {
+   font-family: 'Raleway', Arial, sans-serif;
+    color: white;
+    background-color: lightblue;
+    font-size: 40px;
+    border: none;
+    width: 200px;
+    height: 60px;
+}
+.button:hover{
+   background-color: lightgrey;
+}
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    text-align: center;
+}
+
+.tile_container {
+    float: left;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 2px;
+    -webkit-perspective: 200px;
+       -moz-perspective: 200px;
+         -o-perspective: 200px;
+            perspective: 200px;
+}
+
+.tile {
+   font-family: 'Raleway', Arial, sans-serif;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.4s;
+       -moz-transition: -moz-transform 0.4s;
+        -ms-transition: -ms-transform 0.4s;
+         -o-transition: -o-transform 0.4s;
+            transition: transform 0.4s;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.flipped_tile {
+    -webkit-transform: rotateY( 180deg );
+       -moz-transform: rotateY( 180deg );
+        -ms-transform: rotateY( 180deg );
+         -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.tile * {
+    display: block;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 78px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+         -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+       -moz-transform: rotateY( 180deg );
+        -ms-transform: rotateY( 180deg );
+         -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.frontside {
+    background: lightblue;
+}
+.frontside:hover {
+    background: lightgrey;
+}
+
+.backside {
+    position: relative;
+    border: 1px solid black;
+    height: 78px;
+    width: 78px;
+    background: white;
+}
+
+.row {
+    clear: both;
+}
+
+/**
+ * Character Colors
+ */
+.one {
+    color: lightpink;
+}
+
+.two {
+    color: #C0C0C0;
+}
+
+.three {
+    color: #B0C4DE;
+}
+
+.four {
+    color: lavender;
+}
+
+.five {
+    color: purple;
+}
+
+.six .seven .eight {
+    color: aqua;
+}
+
+/**
+ * bomb
+ */
+.bomb_circle {
+  position: absolute;
+  background-color: black;
+  height: 60%;
+  width: 60%;
+  margin-top: 20%;
+  margin-left: 20%;
+  border-radius: 50%;
+}
+
+.bomb_bump {
+  position: absolute;
+  background-color: black;
+  width: 10%;
+  height: 70%;
+  margin-left: 45%;
+  margin-top: 15%;
+}
+
+/**
+ * Message Box
+ */
+.modal_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.modal_window {
+    position: fixed;
+   font-family: 'Raleway', Arial, sans-serif;
+    font-size: 40px;
+    color: #002540;
+    padding: 20px;
+    width: 320px;
+    height: 200px;
+    background-color: #FAF5F3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 99;
+}
+
+.modal_window button {
+    margin-top: 0.5em;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.modal_window .cleartime {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: aqua;
+    margin-left: 10px;
+}
