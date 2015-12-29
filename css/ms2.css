@@ -1,0 +1,15 @@
+.hidden {display:none;}
+  .unclicked {background-color: lightgrey;}
+  .flagged {color: red;}
+  .question {color: black;}
+  #board:hover {cursor: pointer;}
+  #board.disabled {cursor: not-allowed;}
+  .tile {
+    height: 20px;
+    width: 20px;
+    font-weight: 2;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .marker {background-color: lightblue; }
+  .mine {color: red;}
