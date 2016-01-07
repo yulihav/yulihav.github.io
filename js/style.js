@@ -1,3 +1,5 @@
+function start() {
+
 var elementPosition = $('#header_nav').offset();
 
 $(window).scroll(function() {
@@ -7,3 +9,6 @@ $(window).scroll(function() {
     $('#header_nav').css('position', 'static');
   }
 });
+}
+
+window.onload = start;
