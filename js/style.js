@@ -9,6 +9,11 @@ $(window).scroll(function() {
     $('#header_nav').css('position', 'static');
   }
 });
+
+$(window).scroll(function(){
+    $("#header_pic").css("opacity", 1 - $(window).scrollTop() / 1550);
+}); 
+
 }
 
 window.onload = start;

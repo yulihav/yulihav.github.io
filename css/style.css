@@ -1,13 +1,10 @@
 /*--------------------HEAD--------------------*/
-
 body {
   margin: 0px;
   padding: 0px;
 }
 
-
 /*--------------------NAME TITLE--------------------*/
-
 .hname {
   font-family: 'Raleway', Arial, sans-serif;
   color: white;
@@ -21,7 +18,7 @@ body {
   top: 50%;
   transform: translate(0, -50%);
   text-align: center;
-  font-size: 150%;
+  font-size: 200%;
 }
 
 .hname:hover {
@@ -32,6 +29,9 @@ body {
   height: 10em;
   position: relative;
   background-image: url("http://static1.squarespace.com/static/547bf0d6e4b0a3a6c5c33f15/560b3d12e4b00a287e5b336e/564bc213e4b037eed36f135d/1447805465015/567A8231-3.jpg?format=750w");
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
 }
 
 
@@ -39,18 +39,17 @@ body {
 
 header {
   width: 100%;
-  height: 423px;
+  height: 550px;
 }
 
 #header_pic {
-  /*background-image: url(images/header.png);*/
-  background-color: green;
-  height: 373px;
+  background-color: white;
+  height: 600px;
 }
 
 #header_nav {
   width: 100%;
-  background-color: white;
+  background-color:  white;
   height: 50px;
   z-index: 1;
 }
