@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <link href="/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-2.3.1.js"></script>
     <script src="/js/style.js"></script>
   </head>
 
@@ -36,17 +37,7 @@
     <section name="Contact" id="Contact"></section>
   </div>
 
-<script type="text/javascript">
-    var elementPosition = $('#header_nav').offset();
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > elementPosition.top) {
-        $('#header_nav').css('position', 'fixed').css('top', '0');
-      } else {
-        $('#header_nav').css('position', 'static');
-      }
-});
-</script>  
 </body>
 
   </html>
