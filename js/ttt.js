@@ -1,4 +1,4 @@
-// VARIABLES
+// VARIABLES 
 
 var human = 'x'; // turn = 0
 var computer = 'o'; // turn = 1

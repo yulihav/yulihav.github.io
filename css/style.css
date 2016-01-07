@@ -1,49 +1,97 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-  
-  .header {
+/*--------------------HEAD--------------------*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*--------------------NAME TITLE--------------------*/
+
+.hname {
   font-family: 'Raleway', Arial, sans-serif;
-  text-align: center;
+  color: white;
   position: relative;
-  left: 1.5%;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 10px;
   transition: all 500ms linear;
+  margin: 0;
+  margin-left: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  font-size: 150%;
 }
 
-.header:hover {
-  letter-spacing: 20px;
+.hname:hover {
+  letter-spacing: 15px;
 }
 
-.nav {
+.h3 {
+  height: 10em;
+  position: relative;
+  background-image: url("http://static1.squarespace.com/static/547bf0d6e4b0a3a6c5c33f15/560b3d12e4b00a287e5b336e/564bc213e4b037eed36f135d/1447805465015/567A8231-3.jpg?format=750w");
+}
+
+
+/*--------------------HEADER--------------------*/
+
+header {
+  width: 100%;
+  height: 423px;
+}
+
+#header_pic {
+  /*background-image: url(images/header.png);*/
+  background-color: green;
+  height: 373px;
+}
+
+#header_nav {
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  z-index: 1;
+}
+
+.fixed {
+  top: 0px;
+  position: fixed;
+}
+
+
+/*--------------------MY NAVIGATION--------------------*/
+
+.navi {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.nav * {
+
+.navi * {
   box-sizing: border-box;
 }
-.nav li {
+
+.navi li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1.5em;
   padding: 0;
 }
-.nav a {
+
+.navi a {
   padding: 0.5em 0;
-  color: #686868; 
+  color: #686868;
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
 }
-.nav a:before,
-.nav a:after {
-  position: absolute;
+
+.navi a:before {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-}
-.nav a:before {
   top: 0;
   display: block;
   height: 3px;
@@ -51,7 +99,11 @@
   content: "";
   background-color: lightblue;
 }
-.nav a:after {
+
+.navi a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
   left: 0;
   top: 0;
   padding: 0.5em 0;
@@ -62,20 +114,47 @@
   max-width: 0%;
   overflow: hidden;
 }
-.nav a:hover:before,
-.nav .current a:before {
+
+.navi a:hover:before,
+.navi .current a:before {
   opacity: 1;
   width: 100%;
 }
-.nav a:hover:after,
-.nav .current a:after {
+
+.navi a:hover:after,
+.navi .current a:after {
   max-width: 100%;
 }
-/* Demo purposes only */
-body {
-  background-color: #FFFFFF;
-  padding: 50px 0;
+
+
+/*--------------------NAVIGATION--------------------*/
+
+nav {
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
 }
 
-    
 
+/*--------------------CONTENT--------------------*/
+
+#wrapper {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+#Home,
+#About,
+#Gallery,
+#Literature,
+#Contact {
+  text-align: center;
+  color: #222222;
+  font-family: 'source-sans';
+  height: 300px;
+  padding-top: 50px;
+}
