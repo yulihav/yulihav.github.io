@@ -128,6 +128,7 @@ html {
 .projects .project-label {
   display: block;
   margin: 5px 0 10px;
+  text-align: center;
 }
 
 .project-label:hover {
