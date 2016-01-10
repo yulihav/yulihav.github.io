@@ -1,6 +1,7 @@
 /* HEADER AND MENU */  
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
   .header {
+  font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   position: relative;
   left: 1.5%;
@@ -10,15 +11,12 @@
   transition: all 500ms linear;
 }
 
-* {
-  font-family: 'Raleway', Arial, sans-serif;
-}
-  
 .header:hover {
   letter-spacing: 20px;
 }
 
 .nav {
+  font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -80,6 +78,7 @@ body {
 
 .name {
   text-transform: uppercase ;
+  font-family: Verdana, Geneva, sans-serif ;
   text-align: center;
 }
 
@@ -129,15 +128,9 @@ html {
   display: block;
   margin: 5px 0 10px;
 }
-
-.project-label:hover {
-  color: black;
-}
-
 .projects .current a {
   color: #000;
 }
-
 .projects .current a:after {
   content: "";
   display: table;
@@ -146,7 +139,6 @@ html {
   border-color: #333 transparent;
   margin: auto;
 }
-
 .projects .current a img, .projects .current a .project-label {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -159,11 +151,9 @@ html {
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
-
-h3 {
+.projects h3 {
   font-size: 16px;
 }
-
 .projects .details {
   font-size: 16px;
   display: none;
@@ -216,10 +206,4 @@ h3 {
     width: 100%;
     margin: 0;
   }
-}
-
-.place:hover {
-  -webkit-filter: brightness(70%);
-   filter: brightness(70%);
-
 }
