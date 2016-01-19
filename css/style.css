@@ -25,42 +25,39 @@ body {
   letter-spacing: 15px;
 }
 
+
+/*--------------------HEADER--------------------*/
+header {
+  width: 100%;
+  height: 700px;
+}
+
 .h3 {
-  height: 10em;
   position: relative;
   background-image: url("http://static1.squarespace.com/static/547bf0d6e4b0a3a6c5c33f15/560b3d12e4b00a287e5b336e/564bc213e4b037eed36f135d/1447805465015/567A8231-3.jpg?format=750w");
   background-repeat: no-repeat;
   background-size: 100%;
- 
-}
-
-
-/*--------------------HEADER--------------------*/
-
-header {
-  width: 100%;
-  height: 550px;
 }
 
 #header_pic {
   background-color: white;
-  height: 600px;
+  height: 700px;
 }
 
+/*--------------------NAVIGATION BAR--------------------*/
 #header_nav {
   width: 100%;
   background-color:  white;
-  height: 50px;
+  height: 40px;
   z-index: 1;
 }
 
-.fixed {
-  top: 0px;
-  position: fixed;
+nav {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
 }
-
-
-/*--------------------MY NAVIGATION--------------------*/
 
 .navi {
   font-family: 'Raleway', Arial, sans-serif;
@@ -126,16 +123,6 @@ header {
 }
 
 
-/*--------------------NAVIGATION--------------------*/
-
-nav {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  overflow: hidden;
-  margin: auto;
-}
-
 
 /*--------------------CONTENT--------------------*/
 
@@ -146,14 +133,29 @@ nav {
   z-index: 0;
 }
 
-#Home,
-#About,
-#Gallery,
-#Literature,
-#Contact {
-  text-align: center;
-  color: #222222;
-  font-family: 'source-sans';
-  height: 300px;
-  padding-top: 50px;
+
+.aboutme {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index:3;
+  color: black;
+  margin-right: 10%;
+  font-size: 18px;
+}
+
+.hire{
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.hire:hover{
+  color: lightblue ;
+}
+
+.meimg {
+  margin-top: 0;
+  opacity: 1;
+  float:left;
+  margin-right: 10%;
+  margin-left: 10%;
 }
