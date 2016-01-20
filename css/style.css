@@ -158,6 +158,8 @@ nav {
   margin-right: 10%;
   margin-left: 10%;
   opacity: 0.6;
+  width: 300px;
+  height: 330px;
 }
 
 .meimg:hover {
