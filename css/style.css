@@ -144,9 +144,14 @@ nav {
   padding-right: 100px;
   padding-bottom: 50px;
 }
+
+a.link {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
 }
 
-.link{
+.link {
   font-style: normal;
   text-decoration: none;
   color: black;
