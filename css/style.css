@@ -133,12 +133,17 @@ nav {
 }
 
 
-.aboutme {
+.abouttxt {
   font-family: Arial, Helvetica, sans-serif;
   z-index:3;
   color: black;
   margin-right: 10%;
   font-size: 16px;
+  position: relative;
+  padding-left: 460px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
 }
 
 .link{
@@ -154,8 +159,8 @@ nav {
 .meimg {
   border-radius: 1300px;
   margin-top: 0;
-  float:left;
-  margin-right: 10%;
+  float: left;
+  margin-right: 5%;
   margin-left: 10%;
   opacity: 0.6;
   width: 300px;
