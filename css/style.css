@@ -141,13 +141,13 @@ nav {
   font-size: 16px;
 }
 
-.hire{
+.link{
   font-style: normal;
   text-decoration: none;
   color: black;
 }
 
-.hire:hover{
+.link:hover{
   color: lightblue ;
 }
 

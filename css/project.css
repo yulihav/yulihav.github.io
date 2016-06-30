@@ -230,10 +230,10 @@ h3 {
   filter: brightness(70%);
 }
 
-.placex {
+.place {
   opacity: 0.7;
 }
 
-.placex:hover {
+.place:hover {
   opacity: 1;
 }
