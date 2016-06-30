@@ -1,16 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-  * {
+* {
   font-family: 'Raleway', Arial, sans-serif;
 }
 
 div#pdf {
-    width: 75%;
-    height: 900px;
-    margin: 2em auto;
-    border: 10px solid #6699FF;
+  width: 75%;
+  height: 900px;
+  margin: 2em auto;
+  border: 10px solid #6699FF;
 }
 
-  .header {
+.header {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   position: relative;
@@ -24,7 +24,7 @@ div#pdf {
 .header:hover {
   letter-spacing: 20px;
 }
-  
+
 .nav {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
@@ -91,19 +91,19 @@ body {
 <!-- RESUME -->
 
 div#pdf {
-    width: 75%;
-    height: 900px;
-    margin: 2em auto;
-    border: 10px solid #6699FF;
+  width: 75%;
+  height: 900px;
+  margin: 2em auto;
+  border: 10px solid #6699FF;
 }
 
 div#pdf p {
-   padding: 1em;
+ padding: 1em;
 }
 
 div#pdf object {
-   display: block;
-   border: solid 1px #666;
+ display: block;
+ border: solid 1px #666;
 }
 
 .restext {

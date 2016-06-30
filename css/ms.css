@@ -1,7 +1,7 @@
 /* NAVIGATION */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-  
-  .header {
+
+.header {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   position: relative;
@@ -15,7 +15,7 @@
 .header:hover {
   letter-spacing: 20px;
 }
-  
+
 .nav {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
@@ -75,100 +75,100 @@
 
 /* BUTTONS */
 .diff{
-    font-family: arial;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: lighter;
+  font-family: arial;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 
 .MStitle {
-    font-family: 'Raleway', Arial, sans-serif;
-    text-align: center;
-    font-weight: 400;
-    margin-top: 30px;
-    font-size: 30px;
-    margin-bottom: 0.3em;
-    letter-spacing: 8px;
-    color: grey;
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 30px;
+  font-size: 30px;
+  margin-bottom: 0.3em;
+  letter-spacing: 8px;
+  color: grey;
 }
 .MStitle:hover {
-    color: #000000;
+  color: #000000;
 }
 
 body {
   text-align:center;
 }
 
-  .center {
-    margin-top: 5%;
-    margin-left:auto; 
-    margin-right:auto;
-  }
+.center {
+  margin-top: 5%;
+  margin-left:auto; 
+  margin-right:auto;
+}
 
 .newgame {
-   font-family: 'Raleway', Arial, sans-serif;
-    color: white;
-    background-color: lightblue;
-    font-size: 30px;
-    border: none;
+ font-family: 'Raleway', Arial, sans-serif;
+ color: white;
+ background-color: lightblue;
+ font-size: 30px;
+ border: none;
 }
 .newgame:hover{
-   background-color: #87CEFA  ;
+ background-color: #87CEFA  ;
 }  
 
 /* BOARD */
-  .hidden {
-    display:none;
+.hidden {
+  display:none;
 }
-  .unclicked {
-    background-color: lightgrey;
+.unclicked {
+  background-color: lightgrey;
 }
-  .flagged {
-    color: red;
+.flagged {
+  color: red;
 }
-  .question {
-    color: black;
+.question {
+  color: black;
 }
-  #board:hover {
-    cursor: pointer;
+#board:hover {
+  cursor: pointer;
 
 }
-  #board.disabled {
-    cursor: not-allowed;
+#board.disabled {
+  cursor: not-allowed;
 }
-  .tile {
-    font-family: arial;
+.tile {
+  font-family: arial;
   font-size: 20px;
-    height: 40px;
-    width: 40px;
-    font-weight: 12px;
-    vertical-align: middle;
-    text-align: center;
-    color: black;
-  }
+  height: 40px;
+  width: 40px;
+  font-weight: 12px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+}
 
-  .marker {
-    background-color: lightblue;
+.marker {
+  background-color: lightblue;
   
-    -webkit-transition: -webkit-transform 0.4s;
-       -moz-transition: -moz-transform 0.4s;
-        -ms-transition: -ms-transform 0.4s;
-         -o-transition: -o-transform 0.4s;
-            transition: transform 0.4s;
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-        -ms-transform-style: preserve-3d;
-         -o-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  -ms-transition: -ms-transform 0.4s;
+  -o-transition: -o-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   
-    -webkit-transform: rotateY( 180deg );
-       -moz-transform: rotateY( 180deg );
-        -ms-transform: rotateY( 180deg );
-         -o-transform: rotateY( 180deg );
-            transform: rotateY( 180deg );
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -ms-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
   
 }
-  .mine {
-    color: red;
+.mine {
+  color: red;
 }

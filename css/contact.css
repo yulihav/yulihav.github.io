@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
-  
-  .header {
+
+.header {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;
   position: relative;
@@ -14,7 +14,7 @@
 .header:hover {
   letter-spacing: 20px;
 }
-  
+
 .nav {
   font-family: 'Raleway', Arial, sans-serif;
   text-align: center;

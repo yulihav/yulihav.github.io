@@ -150,9 +150,9 @@ checkWin = function() { // CHECKS IF X WON
     (a3 == b3 && a3 == c3 && (a3 == "x")) || //third column
     (a1 == b2 && a1 == c3 && (a1 == "x")) || //diagonal 1
     (a3 == b2 && a3 == c1 && (a3 == "x")) //diagonal 2
-  ) {
+    ) {
     xWin = true;
-    winAlert();
+  winAlert();
 
   } else { // CHECKS IF O WON
     if ((a1 == a2 && a1 == a3 && (a1 == "o")) || //first row
@@ -163,9 +163,9 @@ checkWin = function() { // CHECKS IF X WON
       (a3 == b3 && a3 == c3 && (a3 == "o")) || //third column
       (a1 == b2 && a1 == c3 && (a1 == "o")) || //diagonal 1
       (a3 == b2 && a3 == c1 && (a3 == "o")) //diagonal 2
-    ) {
+      ) {
       oWin = true;
-      winAlert();
+    winAlert();
 
     } else { // CHECKS FOR TIE GAME IF ALL CELLS ARE FILLED
       if (((a1 == "x") || (a1 == "o")) && ((b1 == "x") || (b1 == "o")) && ((c1 == "x") || (c1 == "o")) && ((a2 == "x") || (a2 == "o")) && ((b2 == "x") || (b2 == "o")) && ((c2 == "x") || (c2 == "o")) && ((a3 == "x") || (a3 == "o")) && ((b3 == "x") || (b3 == "o")) && ((c3 == "x") || (c3 == "o"))) {
