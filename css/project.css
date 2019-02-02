@@ -1,6 +1,7 @@
 /* HEADER AND MENU */  
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 .header {
+  color: #C73C7C;
   text-align: center;
   position: relative;
   left: 1.5%;
