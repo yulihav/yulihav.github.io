@@ -57,7 +57,7 @@
   height: 3px;
   width: 0%;
   content: "";
-  background-color: lightblue;
+  background-color: #C73C7C;
 }
 .nav a:after {
   left: 0;
