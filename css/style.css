@@ -92,7 +92,7 @@ nav {
   height: 3px;
   width: 0%;
   content: "";
-  background-color: lightblue;
+  background-color: #C73C7C;
 }
 
 .navi a:after {
@@ -152,7 +152,7 @@ nav {
 }
 
 a.link {
-  color: #39c ;
+  color: #C73C7C ;
   font-style: normal;
   text-decoration: none; 
 }
