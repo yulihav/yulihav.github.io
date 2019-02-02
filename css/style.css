@@ -78,7 +78,7 @@ nav {
 
 .navi a {
   padding: 0.5em 0;
-  color: #686868;
+  color: #C73C7C;
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
@@ -152,7 +152,7 @@ nav {
 }
 
 a.link {
-  color: #686868 ;
+  color: #C73C7C ;
   font-style: normal;
   text-decoration: none; 
 }
